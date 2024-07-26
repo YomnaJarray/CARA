@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+/* Base styling for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styles for the header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Styles for the main content section */
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styling for form elements */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+#header {
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+}
+
+
+#navbar {
+  list-style: none;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #465b52;
+}
+
+#navbar li a:hover {
+  color: #088178;
+}
+
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar .fa-bag-shopping {
+  font-size: 24px; 
+  color: black; 
+}
+
+/* Hero Section */
+#Hero {
+  background-image: url(img/hero4.png);
+  height: 90vh;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#Hero h4 {
+  padding-bottom: 15px;
+}
+
+#Hero h1 {
+  color: cadetblue;
+}
+
+#Hero button {
+  background-image: url(img/button.png);
+  background-color: transparent;
+  color: darkcyan;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Feature Section */
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .fe_box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feature .fe_box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe_box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe_box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+/* Product Section */
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: calc(25% - 40px); /* Each item takes up 25% of the width minus the margin */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: 0.2s ease;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+/* Other Styles */
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button {
+  display: inline-block;
+  background-color: #088178;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #06665b;
+  transition: 0.5s;
+}
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(img/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner h4{
+  color: #fff;
+  font-size: 16px;
+}
+#banner h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2 span{
+  color: #e80606;
+  
+}
+/* Footer Section */
+footer {
+  background-color: #f4f4f4;
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+}
+
+footer .col {
+  flex: 1;
+  margin: 10px;
+  min-width: 220px;
+}
+
+footer .col img.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+footer .col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+footer .col p {
+  margin: 10px 0;
+  color: #666;
+}
+
+footer .col a {
+  display: block;
+  margin: 5px 0;
+  color: #088178;
+  text-decoration: none;
+}
+
+footer .col a:hover {
+  text-decoration: underline;
+}
+
+footer .col .follow .icon {
+  margin-top: 10px;
+}
+
+footer .col .follow .icon i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #333;
+}
+
+footer .col .install .row img {
+  width: 130px;
+  margin: 5px;
+}
+
+footer .copywrite {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+footer .copywrite p {
+  font-size: 14px;
+  margin: 0;
+}
